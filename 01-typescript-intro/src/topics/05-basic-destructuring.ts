@@ -62,11 +62,20 @@ const {
 
 const {author} = details; //*...y se usa acá
 
-console.log('Song: ', anotherSong);
-console.log('Duration: ', duration);
-console.log('Author: ', author);
+// console.log('Song: ', anotherSong);
+// console.log('Duration: ', duration);
+// console.log('Author: ', author);
 
+/*
+DESESTRUCTURACION de arreglos
+lo mismo que con objetos. Solo que en lugar de usar estas llaves {}, 
+se usan cuadradas []
 
-
-
+cómo se trabaja sin desestructuración en arreglos?
+const dbz: string[] = ['Goku', 'Vegeta', 'Trunk'];
+const trunk = dbz[2];
+console.error('Personaje 3: ', trunk || 'No hay personaje');
+*/
+const [, , trunks = 'Not found']: string[] = ['Goku', 'Vegeta'];
+console.error('Personaje 3: ', trunks);
 export {};
