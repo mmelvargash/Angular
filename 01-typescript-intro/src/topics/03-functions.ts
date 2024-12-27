@@ -25,11 +25,30 @@ return firstNumber*base;
 }
 
 
-const result: number = addNumbers(1,2);
-const result2:string = addNumberArrow1(1,2);
-const multiplyResult:number= multiply(5);
-console.log({result, result2, multiplyResult});
+// const result: number = addNumbers(1,2);
+// const result2:string = addNumberArrow1(1,2);
+// const multiplyResult:number= multiply(5);
+// console.log({result, result2, multiplyResult});
 
+interface Character{
+    name:string;
+    hp:number;
+    // si quiero agregar una funcion a la interfaz:
+    showHp:() => void; // definir la funcion, fecla y el tipo de retorno
+}
+const healCharacter= (character:Character, amount:number)=>{
+    character.hp += amount;
 
+}
 
+const strider:Character = {
+    name: 'Strider',
+    hp:50,
+    showHp(){
+        console.log(`Puntos de vida ${this.hp}`);
+    }
+}
+
+healCharacter(strider,10);
+strider.showHp();
 export {};
