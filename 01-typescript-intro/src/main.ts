@@ -1,9 +1,10 @@
-import './style.css'
-// import './topics/01-basic-types';
 // con los import se busca requerir un módulo
 // un módulo no es más que una agrupación encapsulada de un procedimiento
 
-import './topics/02-object-interface';
+import './style.css'
+// import './topics/01-basic-types';
+// import './topics/02-object-interface';
+import './topics/03-functions';
 
 document.querySelector<HTMLDivElement>('#app')!
 .innerHTML = 
