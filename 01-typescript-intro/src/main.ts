@@ -1,8 +1,7 @@
 import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
-
+// import './topics/01-basic-types';
+// con los import se busca requerir un módulo
+// un módulo no es más que una agrupación encapsulada de un procedimiento
 document.querySelector<HTMLDivElement>('#app')!
 .innerHTML = 
 `
